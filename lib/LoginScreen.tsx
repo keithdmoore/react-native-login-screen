@@ -47,6 +47,7 @@ export interface ILoginScreenProps {
   onTwitterPress?: () => void;
   onApplePress?: () => void;
   onDiscordPress?: () => void;
+  children?: React.ReactNode;
 }
 
 const LoginScreen: React.FC<ILoginScreenProps> = ({
