@@ -1,0 +1,26 @@
+export const __esModule: boolean;
+export default LoginScreen;
+declare function LoginScreen({ style, dividerStyle, logoImageStyle, loginTextStyle, loginButtonStyle, haveAccountTextStyle, haveAccountButtonStyle, textInputContainerStyle, haveAccountText, disableDivider, logoImageSource, onLoginPress, onForgotPasswordPress, disableSocialButtons, onHaveAccountPress, onEmailChange, onPasswordChange, onFacebookPress, onTwitterPress, onApplePress, onDiscordPress, children, }: {
+    style: any;
+    dividerStyle: any;
+    logoImageStyle: any;
+    loginTextStyle: any;
+    loginButtonStyle: any;
+    haveAccountTextStyle: any;
+    haveAccountButtonStyle: any;
+    textInputContainerStyle: any;
+    haveAccountText?: string | undefined;
+    disableDivider: any;
+    logoImageSource: any;
+    onLoginPress: any;
+    onForgotPasswordPress: any;
+    disableSocialButtons: any;
+    onHaveAccountPress: any;
+    onEmailChange: any;
+    onPasswordChange: any;
+    onFacebookPress?: (() => void) | undefined;
+    onTwitterPress?: (() => void) | undefined;
+    onApplePress?: (() => void) | undefined;
+    onDiscordPress?: (() => void) | undefined;
+    children: any;
+}): JSX.Element;
