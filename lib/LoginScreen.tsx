@@ -39,6 +39,7 @@ export interface ILoginScreenProps {
   haveAccountButtonStyle?: CustomStyleProp;
   haveAccountTextStyle?: CustomTextStyleProp;
   onLoginPress: () => void;
+  onForgotPasswordPress: () => void;
   onHaveAccountPress: () => void;
   onEmailChange: (email: string) => void;
   onPasswordChange: (password: string) => void;
@@ -61,6 +62,7 @@ const LoginScreen: React.FC<ILoginScreenProps> = ({
   disableDivider,
   logoImageSource,
   onLoginPress,
+  onForgotPasswordPress,
   disableSocialButtons,
   onHaveAccountPress,
   onEmailChange,
@@ -98,6 +100,15 @@ const LoginScreen: React.FC<ILoginScreenProps> = ({
       onPress={onLoginPress}
     >
       <Text style={[styles.loginTextStyle, loginTextStyle]}>Login</Text>
+    </TouchableOpacity>
+  );
+
+  const ForgotPasswordButton = () => (
+    <TouchableOpacity
+      style={[styles.loginButtonStyle, loginButtonStyle]}
+      onPress={onForgotPasswordPress}
+    >
+      <Text style={[styles.loginTextStyle, loginTextStyle]}>Forgot Password</Text>
     </TouchableOpacity>
   );
 
@@ -151,6 +162,7 @@ const LoginScreen: React.FC<ILoginScreenProps> = ({
       <Logo />
       <TextInputContainer />
       <LoginButton />
+      <ForgotPasswordButton />
       <AlreadyHaveAccount />
       {!disableDivider && <Divider />}
       <View style={styles.socialLoginContainer}>
